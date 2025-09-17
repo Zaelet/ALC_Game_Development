@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SocialPlatforms.Impl;
 public class Balloon : MonoBehaviour
 {
     public int clickToPop = 3; // how many clicks to pop
@@ -16,18 +17,18 @@ public class Balloon : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        scoreManager = GameObject.Find("ScoreManager").GetComponent<ScoreManager>();
     }
 
     void OnMouseDown()
     {
-        //reduce clicks by one
-        clickToPop -= 1;
-        //increase balloon size
-        transform.localScale += Vector3.one * scaleToIncrease;
+       
+        clickToPop -= 1; //reduce clicks by one
+        transform.localScale += Vector3.one * scaleToIncrease; //increase balloon size
 
         if (clickToPop == 0) //check to see if the balloon has popped
         {
+            scoreManager.IncreaseScoreText(scoreToGive); // Increase score
             Destroy(gameObject); // pop the balloon
         }
     }
