@@ -29,6 +29,7 @@ public class Balloon : MonoBehaviour
         if (clickToPop == 0) //check to see if the balloon has popped
         {
             scoreManager.IncreaseScoreText(scoreToGive); // Increase score
+            Instantiate(popEffect, transform.position, transform.rotation);
             Destroy(gameObject); // pop the balloon
         }
     }
