@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 7018170019457041048}
   - component: {fileID: 5147721499443812182}
   - component: {fileID: 6752671724472965707}
+  - component: {fileID: -4266103521206280383}
   m_Layer: 0
-  m_Name: Balloon_POP_effect_Default
+  m_Name: Balloon_POP_effect_Yellow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48,7 +49,7 @@ ParticleSystem:
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
   emitterVelocityMode: 1
-  looping: 1
+  looping: 0
   prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0
@@ -223,7 +224,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.09692062, g: 0.6226415, b: 0.27024102, a: 1}
+      maxColor: {r: 0.8584906, g: 0.8413935, b: 0.09313814, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -4833,3 +4834,16 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!114 &-4266103521206280383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676990956603401378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e467676babd999c439cf8d686156c784, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 3

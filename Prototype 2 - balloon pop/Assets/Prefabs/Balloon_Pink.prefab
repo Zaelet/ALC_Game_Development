@@ -99,10 +99,6 @@ GameObject:
   - component: {fileID: 2666189691171962901}
   - component: {fileID: 2073450844332215547}
   - component: {fileID: 1898748594358679299}
-  - component: {fileID: 842146952197343149}
-  - component: {fileID: 3474359368748768832}
-  - component: {fileID: 7328863711772486102}
-  - component: {fileID: 2912705287918092544}
   m_Layer: 0
   m_Name: Balloon_Pink
   m_TagString: Untagged
@@ -191,6 +187,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+  upperBound: 15
+  scoreManager: {fileID: 0}
+  balloon: {fileID: 0}
 --- !u!114 &1898748594358679299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,65 +205,7 @@ MonoBehaviour:
   clickToPop: 2
   scaleToIncrease: 0.15
   scoreToGive: 20
-  popEffect: {fileID: 0}
---- !u!114 &842146952197343149
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5022287786886288903}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5740bbc0a154f0d47a3be44c5efb1550, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 3
---- !u!114 &3474359368748768832
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5022287786886288903}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ad7221518a0e57459c1a79bcec1f006, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clickToPop: 4
-  scaleToIncrease: 0.15
-  scoreToGive: 40
-  popEffect: {fileID: 0}
---- !u!114 &7328863711772486102
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5022287786886288903}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ad7221518a0e57459c1a79bcec1f006, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clickToPop: 5
-  scaleToIncrease: 0.15
-  scoreToGive: 50
-  popEffect: {fileID: 0}
---- !u!114 &2912705287918092544
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5022287786886288903}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5740bbc0a154f0d47a3be44c5efb1550, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 3
+  popEffect: {fileID: 676990956603401378, guid: f93a19c4fb1b61f47a632009f49a7182, type: 3}
 --- !u!1 &5354604667085213200
 GameObject:
   m_ObjectHideFlags: 0

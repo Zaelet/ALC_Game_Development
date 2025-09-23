@@ -13,10 +13,6 @@ GameObject:
   - component: {fileID: 8807597297784756066}
   - component: {fileID: 3648258166076757415}
   - component: {fileID: 2955153343200677771}
-  - component: {fileID: 5001587979824595363}
-  - component: {fileID: 2157282513435526566}
-  - component: {fileID: 2969934668393028932}
-  - component: {fileID: 8064643052196313038}
   m_Layer: 0
   m_Name: Balloon_Blue 1
   m_TagString: Untagged
@@ -32,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 845621454803544512}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.68337077, z: -0, w: 0.73007154}
+  m_LocalRotation: {x: 0, y: 0.68336934, z: 0, w: 0.7300728}
   m_LocalPosition: {x: -16.71403, y: -3.07, z: 83.19342}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -105,6 +101,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+  upperBound: 15
+  scoreManager: {fileID: 0}
+  balloon: {fileID: 0}
 --- !u!114 &2955153343200677771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,65 +119,7 @@ MonoBehaviour:
   clickToPop: 2
   scaleToIncrease: 0.15
   scoreToGive: 20
-  popEffect: {fileID: 0}
---- !u!114 &5001587979824595363
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 845621454803544512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5740bbc0a154f0d47a3be44c5efb1550, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 3
---- !u!114 &2157282513435526566
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 845621454803544512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ad7221518a0e57459c1a79bcec1f006, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clickToPop: 4
-  scaleToIncrease: 0.15
-  scoreToGive: 40
-  popEffect: {fileID: 0}
---- !u!114 &2969934668393028932
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 845621454803544512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ad7221518a0e57459c1a79bcec1f006, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clickToPop: 5
-  scaleToIncrease: 0.15
-  scoreToGive: 50
-  popEffect: {fileID: 0}
---- !u!114 &8064643052196313038
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 845621454803544512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5740bbc0a154f0d47a3be44c5efb1550, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 3
+  popEffect: {fileID: 875210004767547164, guid: 1107e469cc1ebd243b82bd60a40cec08, type: 3}
 --- !u!1 &2428996949381066462
 GameObject:
   m_ObjectHideFlags: 0
