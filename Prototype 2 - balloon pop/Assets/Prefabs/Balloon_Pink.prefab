@@ -202,7 +202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ad7221518a0e57459c1a79bcec1f006, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clickToPop: 2
+  clickToPop: 5
   scaleToIncrease: 0.15
   scoreToGive: 20
   popEffect: {fileID: 676990956603401378, guid: f93a19c4fb1b61f47a632009f49a7182, type: 3}
