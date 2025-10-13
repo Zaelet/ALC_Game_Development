@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
-using UnityEngine.SceneManagment;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class PlayerController2D : MonoBehaviour
@@ -23,12 +23,13 @@ public class PlayerController2D : MonoBehaviour
         scoreText.text = "Score: " + score;
     }
     // fixed update for consistant movement
-    void FixedUpdate ()
+    void FixedUpdate()
     {
         float moveInput = Input.GetAxisRaw("Horizontal");
         rig.velocity = new Vector2(moveInput * moveSpeed, rig.velocity.y);
-        
+
     }
+    
     // update for reactive jumps
     void Update()
     {
@@ -40,7 +41,7 @@ public class PlayerController2D : MonoBehaviour
         }
 
         //Killbox
-        if (transform.posistion.y < bottomBound)
+        if (transform.position.y < bottomBound)
         {
             GameOver();
         }
