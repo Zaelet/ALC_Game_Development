@@ -3,20 +3,19 @@ using System.Collections.Generic;
 using System.Collections;
 using UnityEngine.SceneManagement;
 using TMPro;
+using NUnit.Framework;
 
 public class PlayerController2D : MonoBehaviour
 {
-    [Header("Player Settings")]
     public float moveSpeed;
     public float jumpForce;
     public bool isGrounded;
     public int bottomBound = -4; // killbox
-    [Header("Score")]
     public int score;
 
     public Rigidbody2D rig;
     public TextMeshProUGUI scoreText;
-   
+
     public void AddScore (int amount)
     {
         score += amount;
@@ -36,6 +35,7 @@ public class PlayerController2D : MonoBehaviour
         
         if(Input.GetKeyDown(KeyCode.UpArrow) && isGrounded)
         {
+            Debug.Log("player is jumping");
             isGrounded = false;
             rig.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse); // impulse applies force in a burst, great for jumps
         }
@@ -49,8 +49,10 @@ public class PlayerController2D : MonoBehaviour
     // check if touching ground
     void OnCollisionEnter2D (Collision2D collision)
     {
-        if (collision.GetContact(0).normal == Vector2.up)
+        Debug.Log("touched the ground");
+        if(collision.GetContact(0).normal == Vector2.up)
         {
+            Debug.Log("is grounded");
             isGrounded = true;
         }
     }

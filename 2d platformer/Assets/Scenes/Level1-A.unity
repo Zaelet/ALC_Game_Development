@@ -278,9 +278,9 @@ GameObject:
   m_Component:
   - component: {fileID: 431427992}
   - component: {fileID: 431427991}
-  - component: {fileID: 431427990}
   - component: {fileID: 431427994}
   - component: {fileID: 431427993}
+  - component: {fileID: 431427990}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -301,8 +301,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
-  jumpForce: 100
-  isGrounded: 0
+  jumpForce: 6
+  isGrounded: 1
   bottomBound: -4
   score: 0
   rig: {fileID: 431427993}
@@ -371,7 +371,7 @@ Transform:
   m_GameObject: {fileID: 431427989}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.494, y: -2.37, z: 0}
+  m_LocalPosition: {x: 0.494, y: -1.72, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -532,7 +532,7 @@ Transform:
   m_GameObject: {fileID: 749333228}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.01, y: -3.506, z: 0}
+  m_LocalPosition: {x: 0, y: -3.56, z: 0}
   m_LocalScale: {x: 21.78229, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

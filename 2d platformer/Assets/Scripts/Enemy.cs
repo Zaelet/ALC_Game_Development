@@ -35,7 +35,10 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision) // are we touching the player
     {
-        collision.GetComponent<PlayerController2D>().GameOver();
+        if(collision.CompareTag("Player"))
+        {
+            collision.GetComponent<PlayerController2D>().GameOver();
+        }
     }
 
 
