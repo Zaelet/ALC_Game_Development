@@ -49,10 +49,12 @@ public class PlayerController2D : MonoBehaviour
     // check if touching ground
     void OnCollisionEnter2D (Collision2D collision)
     {
-        Debug.Log("touched the ground");
+        if (isGrounded == false)
+        {
+            isGrounded = true;   
+        }
         if(collision.GetContact(0).normal == Vector2.up)
         {
-            Debug.Log("is grounded");
             isGrounded = true;
         }
     }
