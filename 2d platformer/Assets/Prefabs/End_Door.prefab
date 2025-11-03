@@ -150,6 +150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   finalLevel: 0
   nextLevelName: Level2-A
+  animator: {fileID: 1339732365861107871}
 --- !u!95 &1339732365861107871
 Animator:
   serializedVersion: 7

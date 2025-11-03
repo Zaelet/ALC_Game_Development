@@ -914,6 +914,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2693892645126663096, guid: 4ee7d4ac82a7f47468734e7b2dec5551, type: 3}
+      propertyPath: moveOffset.x
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6821745066694690584, guid: 4ee7d4ac82a7f47468734e7b2dec5551, type: 3}
       propertyPath: m_Name
       value: Enemy
