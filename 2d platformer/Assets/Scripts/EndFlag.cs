@@ -16,27 +16,26 @@ public class EndFlag : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-
-        if (collision.CompareTag("Player"))
-        {
-            animator.SetBool("OpenDoor", true);
-        }
-        else
-        {
-            animator.SetBool("OpenDoor", false);
-        }
         
         if (collision.CompareTag("Player"))
         {
             if (finalLevel == true)
             {
-                SceneManager.LoadScene(0);
+                animator.SetBool("OpenDoor", true);
+                //if( this.animator.GetCurrentAnimatorStateInfo(0).IsName("OpenDoor") )
+                //{
+                   SceneManager.LoadScene(0); 
+               // }
+                
             }
             else
             {
-                SceneManager.LoadScene(nextLevelName);
+                animator.SetBool("OpenDoor", true);
+                //if (this.animator.GetCurrentAnimatorStateInfo(0).IsName("OpenDoor"))
+               // {
+                    SceneManager.LoadScene(nextLevelName);
+               // }
             }
-
         }
 
     } 
